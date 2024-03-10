@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cart Component</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    .box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    .products-list, .cart {
+      width: 50%;
+      background-color: rgb(44, 78, 79);
+      color: whitesmoke;
+    }
+    .product-item {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    .cart-item {
+      margin-bottom: 5px;
+    }
+    h2{
+      color: white;
+      font-size: 30px;
+    }
+    p{
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box products-list">
+      <h2>Products</h2>
+      <ul id="products">
+        <!-- Product items will be added here -->
+      </ul>
+    </div>
+    <div class="box cart">
+      <h2>Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will be added here -->
+      </div>
+      <p id="cart-total">Total : $0</p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
